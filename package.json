@@ -1,0 +1,42 @@
+{
+  "name": "react-stop",
+  "version": "1.0.0",
+  "description": "Simple Starter kit for react, nextjs, gatsby, docz projects within a single repo by the support of yarn workspaces and lerna.",
+  "main": "index.js",
+  "repository": "git@github.com:neamatmim/react-stop.git",
+  "author": "Neamat Khan Mim <neamatmim@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "del-dist": "lerna exec --parallel -- rimraf dist",
+    "changelog": "lerna-changelog",
+    "prebuild": "yarn del-dist",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md,css,html}": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ],
+    "yarn.lock": [
+      "git rm --cached"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.14.0",
+    "husky": "^1.3.1",
+    "lerna": "^3.13.0",
+    "lerna-changelog": "^0.8.2",
+    "lint-staged": "^8.1.4",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3"
+  }
+}

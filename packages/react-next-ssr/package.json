@@ -1,0 +1,24 @@
+{
+  "name": "react-next-ssr",
+  "version": "1.0.0",
+  "description": "Next Js Projects starter kit for react devs",
+  "main": "index.js",
+  "author": "Neamat Khan Mim <neamatmim@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "yarn build && next export"
+  },
+  "dependencies": {
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0"
+  }
+}
