@@ -1,0 +1,9 @@
+{
+  "name": "react-common",
+  "version": "1.0.0",
+  "description": "Common Facts for the Project",
+  "main": "index.js",
+  "author": "Neamat Khan Mim <neamatmim@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
