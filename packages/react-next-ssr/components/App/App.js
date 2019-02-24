@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Button } from 'shared-ui';
 import nextStyledCom from '../../static/images/next-styled-components.png';
 const nextNodeReact = '/static/images/next-node-react.jpeg';
 
@@ -53,24 +54,27 @@ const User = props => (
   </UserWrapper>
 );
 
-export default () => (
-  <Container>
-    <h1>About Styled Components</h1>
-    <p>Styled Components is cool</p>
-    <User
-      username="Jane Doe"
-      avatar={nextNodeReact}
-      excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <User
-      username="Bob Smith"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-      excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <User
-      username="Bob Smith"
-      avatar={nextStyledCom}
-      excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-  </Container>
-);
+export default function App() {
+  return (
+    <Container>
+      <h1>About Styled Components</h1>
+      <p>Styled Components is cool</p>
+      <User
+        username="Jane Doe"
+        avatar={nextNodeReact}
+        excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
+      <User
+        username="Bob Smith"
+        avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+        excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
+      <User
+        username="Bob Smith"
+        avatar={nextStyledCom}
+        excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      />
+      <Button />
+    </Container>
+  );
+}

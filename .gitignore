@@ -3,6 +3,7 @@
 node_modules/
 dist
 build
+.docz
 .next
 .DS_Store
 *.tgz

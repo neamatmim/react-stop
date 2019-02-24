@@ -1,5 +1,4 @@
 {
-  "lerna": "3.13.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
@@ -15,6 +14,12 @@
       "tag: internal": ":house: Internal",
       "tag: underlying tools": ":hammer: Underlying Tools"
     },
-    "cacheDir": ".changelog"
+    "cacheDir": ".changelog",
+    "command": {
+      "publish": {
+        "conventionalCommits": true,
+        "yes": true
+      }
+    }
   }
 }
